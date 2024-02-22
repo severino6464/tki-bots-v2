@@ -9,7 +9,7 @@ def executar_sala(sala_codigo):
         subprocess.run(["python3", os.path.join(base_path, sala_codigo)])
 
 # Número total de salas
-num_salas = 1000
+num_salas = 200
 
 # Caminho para a pasta onde o código está sendo executado
 base_path = os.path.dirname(os.path.abspath(__file__))
