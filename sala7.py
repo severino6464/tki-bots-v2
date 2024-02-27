@@ -18,8 +18,8 @@ entrada_normal = random.randint(3, 11)
 
 texto2 = f"""
 ENTRADA CONFIRMADA!
-Horários Pagantes: {entrada_normal}
-Validade: 3 minutos
+Minutos Pagantes: {entrada_normal} min.(Fazer entradas dentro do prazo de minutos)
+Validade: Sem validade
 
 """
 
