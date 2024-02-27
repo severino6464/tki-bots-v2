@@ -3,7 +3,7 @@ import time
 import datetime
 import random
 
-CHAVE_API = "7122848020:AAFLRnw_i11ywvhyAztioEpjfKpAMKGoAms"  # BOT FOX
+CHAVE_API = "6722903231:AAE_Z5PhwNMjmo0rDXxkz8oeQJNP9Uc8qWg"  # BOT FOX
 
 bot = telebot.TeleBot(CHAVE_API)
 
