@@ -12,8 +12,13 @@ group_id = '-1002146987560'
 texto1 = """
 ATENÇÃO!
 """
+  
+texto2 = f"""
+ENTRADA CONFIRMADA!
+Entrar: {entrada_normal}x teste e {entrada_turbo}x turbo
+Validade: 3 minutos
 
-
+"""
 
 texto3 = """
 ENTRADA ENCERRADA
