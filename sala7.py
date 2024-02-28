@@ -13,10 +13,14 @@ texto1 = """
 ATENÇÃO!
 """
   
-texto2 = """
+
+# Gerar valores aleatórios para a entrada normal e turbo
+entrada_normal = random.randint(3, 11)
+
+texto2 = f"""
 ENTRADA CONFIRMADA!
-Entrar: {entrada_normal}x teste e {entrada_turbo}x turbo
-Validade: 3 minutos
+Minutos Pagantes: {entrada_normal} min.(Fazer entradas dentro do prazo de minutos)
+Validade: -
 
 """
 
