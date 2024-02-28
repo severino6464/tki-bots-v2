@@ -13,7 +13,7 @@ texto1 = """
 ATENÇÃO!
 """
   
-texto2 = f"""
+texto2 = """
 ENTRADA CONFIRMADA!
 Entrar: {entrada_normal}x teste e {entrada_turbo}x turbo
 Validade: 3 minutos
