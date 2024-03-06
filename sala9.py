@@ -18,7 +18,7 @@ texto4 = """
 🎲 Fique atento ao jogo 🎲
 💣 Mines - Entrada em 2 minutos
 🔎 Estamos validando uma entrada
-<a href="https://affiliates.nuts.bet/visit/?bta=35107&brand=nutsbet">🖥 Link de cadastro</a>
+<a href="https://18k.bet/ac/Mines01">🖥 Link de cadastro</a>
 """
 
 texto5 = """
@@ -66,8 +66,8 @@ mensagem = """
 
 🎮: Tentativas: 2
 Jogar com 2 minas
-<a href="https://affiliates.nuts.bet/visit/?bta=35107&brand=nutsbet">📲 Plataforma correta</a>
-<a href="https://affiliates.nuts.bet/visit/?bta=35107&brand=nutsbet">👉🏻 Link do jogo</a>
+<a href="https://18k.bet/ac/Mines01">📲 Plataforma correta</a>
+<a href="https://18k.bet/ac/Mines01">👉🏻 Link do jogo</a>
 ⏱️ Válido até: {}
 Quem lucrou acima de R$ 10 reage aqui embaixo 👇
 """
