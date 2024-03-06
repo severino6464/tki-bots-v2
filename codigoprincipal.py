@@ -6,7 +6,7 @@ import threading
 # Função para executar um código de sala em loop
 def executar_sala(sala_codigo):
     while True:
-        subprocess.run(["python", os.path.join(base_path, sala_codigo)])
+        subprocess.run(["python3", os.path.join(base_path, sala_codigo)])
 
 # Número total de salas
 num_salas = 200
