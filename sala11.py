@@ -50,7 +50,7 @@ mensagem = """
 
 {}
 
-<a href="https://t.me/c/1816634805/13">Use o slowmotion para ter certeza da entrada</a>
+<a href="https://t.me/c/1904535657/11">Use o slowmotion para ter certeza da entrada</a>
 
 🔗 Link de acesso: <a href="https://go.aff.br4-partners.com/iu9afmas?utm_source=Thimbres"><b>Mr Thimble</b></a>
 
