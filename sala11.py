@@ -7,7 +7,7 @@ CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8"  # BOT FOX
 
 bot = telebot.TeleBot(CHAVE_API)
 
-group_id = '-1001816634805'
+group_id = '-1001904535657'
 
 def formatar_matriz(matriz):
     return "\n".join(f"{i + 1} " + "".join(f"{col}" if col != "🛢" else "🛢" for col in linha) for i, linha in enumerate(matriz))
