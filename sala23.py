@@ -68,7 +68,7 @@ time.sleep(120)
 
   
 possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
-validade = datetime.datetime.now() + datetime.timedelta(minutes=3)
+validade = datetime.datetime.now() + datetime.timedelta(minutes=5)
 hora_validade = validade.strftime("%H:%M")
 mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, hora_validade)
 
