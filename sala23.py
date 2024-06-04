@@ -29,7 +29,7 @@ texto4 = """
 ✈️ Aviator 
 🔎 identificando entrada
 
-<a href="==="><b>🖥 Link de cadastro</b></a>
+<a href="https://18k.bet/ac/aviator18k"><b>🖥 Link de cadastro</b></a>
 """
 
 
@@ -52,7 +52,7 @@ mensagem = """
 
 ⏱️ Válido até: {}
 
-<a href="==="><b>🖥 Link de cadastro</b></a>
+<a href="https://18k.bet/ac/aviator18k"><b>🖥 Link de cadastro</b></a>
 """
 
 
