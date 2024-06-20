@@ -50,8 +50,7 @@ Jogar com 2 a 3 minas
 
 ⏱️ Válido até: {}
 
-<a href="========">📲: Plataforma correta</a>
-<a href="https://nuts.bet/casino/game/2172765">👉🏻: Link do jogo</a>
+<a href="https://baraodabet.com/main">📲: Plataforma correta</a>
 """
 
 
