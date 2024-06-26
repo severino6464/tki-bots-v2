@@ -53,8 +53,8 @@ Jogar com 2 a 3 minas
 
 ⏱️ Válido até: {}
 
-<a href="https://go.aff.br4-partners.com/gdp9s2xv">📲: Plataforma correta</a>
-<a href="https://go.aff.br4-partners.com/gdp9s2xv">👉🏻: Link do jogo</a>
+<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">📲: Plataforma correta</a>
+<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">👉🏻: Link do jogo</a>
 
 Quem lucrou acima de R$ 10 reage aqui embaixo 👇
 """
