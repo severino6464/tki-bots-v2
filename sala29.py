@@ -40,7 +40,7 @@ texto1 = """
 🎲 Fique atento ao jogo 🎲
 💣 Mines - Entrada em 2 minutos
 🔎 Estamos validando uma entrada
-<a href="https://go.aff.br4-partners.com/gdp9s2xv">🖥 Link de cadastro</a>
+<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">🖥 Link de cadastro</a>
 """
 
 mensagem = """
