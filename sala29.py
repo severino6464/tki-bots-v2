@@ -7,7 +7,7 @@ CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8"
 
 bot = telebot.TeleBot(CHAVE_API)
 
-group_id = '-1001850447368'
+group_id = '-1002205356934'
 
 possibilidades_minas = [
     "💣⭐️⭐️💣💣\n💣💣⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️⭐️⭐️\n💣💣⭐️💣💣",
