@@ -50,14 +50,14 @@ mensagem = """
 📲: Plataforma correta: [Clique aqui](https://baraodabet.com/main?openedModals=%2Fsign-up)
 """
 
-print(")
+print("")
 
 bot.send_message(chat_id=group_id, text=texto4, parse_mode='Markdown')
 time.sleep(120) 
 
 
 
-  
+ "
 possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
 validade = datetime.datetime.now() + datetime.timedelta(minutes=1)
 hora_validade = validade.strftime("%H:%M")
