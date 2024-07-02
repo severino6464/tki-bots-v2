@@ -1,68 +1,142 @@
 import telebot
-import time
 import datetime
 import random
+import time
 
-CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" # BOT FOX
-
+CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
+channel_id = '-1002224362351'
 
-group_id = '-1002226513046'
-
-sticker_file_id = 'CAACAgIAAxkBAAMmZSb_ngXS-jrJPaIDkQxNkCtYOQQAAtgLAAJYD5hKNPj69b5xWK8wBA'
-
-links = [
-    "https://exemplo1.com",
-]
-
-
-possibilidades_minas = [
-    "Apostar em números baixos [1-18]",
-    "Apostar em números altos [19-36]",
-    "Apostar na duzia 1 e 3",
-    "Apostar na cor 🔴",
-    "Apostar na cor ⚫"
-]
-
-
+possibilidades_minas = [f"Apostar no número {i} (com oito vizinhos na pista)" for i in range(1, 37)]
+possibilidades_minas.append("Apostar no número 0 (com oito vizinhos na pista)")
 
 texto4 = """
-⚠️ <b>ATENÇÃO VAMOS INICIAR!</b> ⚠️
+Pra quem ainda quer mais sinais, nossa sessão aqui começa às 16:00!🔥
+
+⏰ Já coloca seu relógio pra despertar, vou passar 10 ENTRADAS em Números
+
+Vamos pra cima tropa! 🚀
 """
 
+texto5 = """
+ABRAM A AUTO MEGA, VAMOS INICIAR!🔥💸
+
+<a href="https://bantubet.co.ao/affiliates/?btag=1786461"><b>👉CLIQUE AQUI PARA ABRIR A CORRETORA</b></a>
+"""
+
+texto6 = """
+✅ SESSÃO FINALIZADA ✅
+"""
 
 mensagem = """
-🔥 <b>ROBÔ CONFIRMOU</b> 🔥
-🎰 Roleta: Brasileira
+🎯 Entrada Confirmada 🎯
 
-{}
+🖥 Roleta: Auto Mega Roulette
+🔥 Entrada: {}
+🛟 Até dois Gales - Cubra o zero!
 
-⏱️ Válido até: {}
+🧨 Último número: {}
 
-👉 Cobrir o zero
-🔁 Fazer até 3 gales
 
-<a href="========">🔗 Cadastre-se antes de Jogar!</a>
-
-<a href="https://nuts.bet/live-casino/game/2177465">🖥 Jogue aqui!</a>
-
+<a href="https://t.me/metodofortuna/50"><b>🍀Clique aqui se ainda tem dúvidas!</b></a>
 """
 
+def send_signal():
+    bot.send_message(chat_id=channel_id, text=texto4, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(1200) 
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
-print("======")
-bot.send_message(chat_id=group_id, text=texto4, parse_mode='HTML', disable_web_page_preview=True)
-time.sleep(60)
-possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
-link_aleatorio = random.choice(links)
-validade = datetime.datetime.now() + datetime.timedelta(minutes=5)
-hora_validade = validade.strftime("%H:%M")
-mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, hora_validade)
-mensagem_formatada = mensagem_formatada.replace("LINK_PLATAFORMA_CORRETA", link_aleatorio)
-mensagem_formatada = mensagem_formatada.replace("LINK_JOGO", link_aleatorio)
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
-bot.send_message(chat_id=group_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
-time.sleep(120)
-bot.send_sticker(chat_id=group_id, sticker=sticker_file_id)
-time.sleep(420)
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(30)
+    bot.send_message(chat_id=channel_id, text=texto6, parse_mode='HTML', disable_web_page_preview=True)
+
+    
+
+def check_and_send_signal():
+    current_time = datetime.datetime.now().strftime("%H:%M")
+    signal_times = [
+        "15:40"
+    ]
+
+    if current_time in signal_times:
+        send_signal()
+
+try:
+    check_and_send_signal()
+except Exception as e:
+    print(f"Error occurred: {str(e)}")
