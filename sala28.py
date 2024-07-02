@@ -5,7 +5,7 @@ import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
-channel_id = '-1002158039735'
+channel_id = '-1002224362351'
 
 possibilidades_minas = [
     "Apostar na primeira dúzia [1-12]",
