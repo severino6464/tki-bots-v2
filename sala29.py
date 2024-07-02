@@ -1,83 +1,98 @@
 import telebot
-import time
 import datetime
 import random
+import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
-
 bot = telebot.TeleBot(CHAVE_API)
+channel_id = '-1002158039735'
 
-group_id = '-1002205356934'
+possibilidades_minas = [f"Apostar no número {i} (com oito vizinhos na pista)" for i in range(1, 37)]
+possibilidades_minas.append("Apostar no número 0 (com oito vizinhos na pista)")
 
-possibilidades_minas = [
-    "💣⭐️⭐️💣💣\n💣💣⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️⭐️⭐️\n💣💣⭐️💣💣",
-    "💣💣⭐️💣⭐️\n💣⭐️⭐️💣💣\n💣⭐️⭐️💣💣\n💣💣⭐️💣💣\n💣💣⭐️💣💣",
-    "⭐️💣⭐️💣💣\n💣💣⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️⭐️⭐️\n💣💣⭐️💣💣",
-    "💣💣💣⭐️⭐️\n💣💣💣⭐️💣\n💣⭐️⭐️⭐️💣\n💣💣⭐️💣💣\n💣💣⭐️💣💣",
-    "⭐️💣💣💣⭐️\n💣💣⭐️💣💣\n💣💣💣💣💣\n💣⭐️⭐️💣💣\n💣💣⭐️💣💣",
-    "⭐️💣💣💣⭐️\n💣💣⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️💣💣\n💣💣⭐️💣💣",
-    "💣⭐️💣💣💣\n⭐️💣⭐️💣💣\n💣⭐️⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️💣💣",
-    "💣⭐️💣⭐️💣\n💣💣💣⭐️💣\n💣💣⭐️⭐️💣\n💣💣⭐️⭐️💣\n💣💣⭐️💣💣",
-    "⭐️⭐️⭐️💣💣\n💣⭐️⭐️💣💣\n💣💣💣💣💣\n💣💣⭐️💣💣\n💣💣⭐️💣💣",
-    "💣💣💣💣💣\n💣💣💣💣⭐️\n⭐️💣⭐️💣💣\n💣💣⭐️💣💣\n💣💣⭐️💣💣",
-    "⭐️⭐️💣💣💣\n💣⭐️💣💣💣\n💣⭐️⭐️⭐️💣\n💣💣💣💣💣\n💣💣💣💣💣",
-    "⭐️⭐️💣⭐️💣\n💣💣💣⭐️⭐️\n💣💣💣💣💣\n💣💣💣💣💣\n💣⭐️⭐️⭐️💣",
-    "💣💣💣💣⭐️\n⭐️💣💣⭐️💣\n⭐️⭐️⭐️💣💣\n💣⭐️💣💣💣\n💣⭐️💣💣💣",
-    "⭐️💣💣⭐️💣\n💣💣💣💣💣\n💣⭐️💣⭐️💣\n💣⭐️💣💣💣\n💣⭐️💣⭐️💣",
-    "⭐️⭐️⭐️💣💣\n⭐️💣⭐️💣💣\n💣💣💣💣💣\n💣💣💣💣💣\n💣💣💣⭐️💣",
-    "⭐️💣💣💣💣\n⭐️💣💣⭐️💣\n💣💣💣💣💣\n💣💣⭐️⭐️💣\n💣💣⭐️⭐️⭐️",
-    "💣💣💣💣⭐️\n⭐️💣💣⭐️💣\n⭐️💣⭐️⭐️💣\n💣💣💣💣💣\n💣💣⭐️⭐️💣",
-    "💣💣💣⭐️💣\n⭐️💣💣⭐️⭐️\n⭐️💣💣💣💣\n💣💣💣💣💣\n💣💣💣⭐️💣",
-    "⭐️💣💣💣💣\n💣💣💣💣💣\n⭐️💣💣💣💣\n💣⭐️💣⭐️💣\n💣⭐️💣⭐️💣"
-]
+texto4 = """
+🤑Falaaa tropa, em 15 minutos já começa nossa sessão EM NÚMEROS! Se preparem e vamos pra cima!🚀
 
-links = [
-    "https://exemplo1.com",
-   
-]
+ 👉CLIQUE AQUI (Passo-a-passo) (https://t.me/metodofortuna/50)
 
-texto1 = """
-🎲 Fique atento ao jogo 🎲
-💣 Mines - Entrada em 2 minutos
-🔎 Estamos validando uma entrada
-<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">🖥 Link de cadastro</a>
+‼️Ainda tem dúvidas, ou não sabe como operar comigo? <a href="https://t.me/metodofortuna/50"><b>👉COMECE POR AQUI(CLIQUE)</b></a>
+"""
+
+texto5 = """
+ABRAM A AUTO MEGA, VAMOS INICIAR!🔥💸
+
+<a href="https://bantubet.co.ao/affiliates/?btag=1786461"><b>👉CLIQUE AQUI PARA ABRIR A CORRETORA</b></a>
+"""
+
+texto6 = """
+✅ SESSÃO FINALIZADA ✅
 """
 
 mensagem = """
-🎲 Entrada confirmada 🎲
-🥇: Entrada 
+🎯 Entrada Confirmada 🎯
 
-{}
-🎮: Tentativas: 2
-Jogar com 2 a 3 minas
+🖥 Roleta: Auto Mega Roulette
+🔥 Entrada: {}
+🛟 Até dois Gales - Cubra o zero!
 
-⏱️ Válido até: {}
+🧨 Último número: {}
 
-<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">📲: Plataforma correta</a>
-<a href="https://bcraft.g2afse.com/click?pid=1595&offer_id=16">👉🏻: Link do jogo</a>
 
-Quem lucrou acima de R$ 10 reage aqui embaixo 👇
+<a href="https://t.me/metodofortuna/50"><b>🍀Clique aqui se ainda tem dúvidas!</b></a>
 """
 
+def send_signal():
+    bot.send_message(chat_id=channel_id, text=texto4, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(900) 
+    bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
-text2 = """
-🔷🔹 Entrada Finalizada 🔹🔷
-     ✅✅ GRENN! ✅✅
-  """
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
+    
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(300)
 
-print("=====")
-bot.send_message(chat_id=group_id, text=texto1, parse_mode='HTML', disable_web_page_preview=True)
-time.sleep(120)
-possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
-link_aleatorio = random.choice(links)
-validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
-hora_validade = validade.strftime("%H:%M")
-mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, hora_validade)
-mensagem_formatada = mensagem_formatada.replace("LINK_PLATAFORMA_CORRETA", link_aleatorio)
-mensagem_formatada = mensagem_formatada.replace("LINK_JOGO", link_aleatorio)
-bot.send_message(chat_id=group_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
-time.sleep(30)
-time.sleep(90)
-bot.send_message(chat_id=group_id, text=text2 ,parse_mode='HTML', disable_web_page_preview=True)
-time.sleep(180)  # Espera 5 minutos (300 segundos)
+    possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
+    validade = datetime.datetime.now() + datetime.timedelta(minutes=2)
+    n_jogadas = random.randint(1, 37)
+    mensagem_formatada = mensagem.format(possibilidade_mina_aleatoria, n_jogadas)
+    bot.send_message(chat_id=channel_id, text=mensagem_formatada, parse_mode='HTML', disable_web_page_preview=True)
+    time.sleep(30)
+    bot.send_message(chat_id=channel_id, text=texto6, parse_mode='HTML', disable_web_page_preview=True)
+
+    
+
+def check_and_send_signal():
+    current_time = datetime.datetime.now().strftime("%H:%M")
+    signal_times = [
+        "14:45"
+    ]
+
+    if current_time in signal_times:
+        send_signal()
+
+try:
+    check_and_send_signal()
+except Exception as e:
+    print(f"Error occurred: {str(e)}")
