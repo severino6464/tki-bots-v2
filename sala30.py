@@ -5,7 +5,7 @@ import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
-channel_id = '-1002219798321'
+channel_id = '-1002191964278'
 
 possibilidades_minas = [
     "Apostar na primeira dúzia [1-12]",
@@ -19,7 +19,7 @@ possibilidades_minas = [
 texto4 = """
 🎯 TROPA DO VIP! 🎯
 
-Às <u>07:30</u> já vou iniciar a nossa primeira sessão de operações do dia em <u>DÚZIAS E COLUNAS!</u>💰
+Às <u>11:30</u> já vou iniciar a nossa primeira sessão de operações do dia em <u>DÚZIAS E COLUNAS!</u>💰
 
 Já prepara sua banca pra forrarmos o bolso 💸
 """
