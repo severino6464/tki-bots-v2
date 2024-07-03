@@ -39,9 +39,9 @@ animais = [
 🐯{} 
 🐯{}
 
-<a href="https://go.aff.br4-partners.com/d2ir7y9d">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
 
-<a href="https://go.aff.br4-partners.com/90h6qu0e">Link do jogo!</a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">Link do jogo!</a>
 """
     },
     {
@@ -64,9 +64,9 @@ animais = [
 🐂{} 
 🐂{}
 
-<a href="https://go.aff.br4-partners.com/d2ir7y9d">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
 
-<a href="https://go.aff.br4-partners.com/18eezj1i">Link do jogo!</a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">Link do jogo!</a>
 """
     },
     {
@@ -89,9 +89,9 @@ animais = [
 🐭{} 
 🐭{}
 
-<a href="https://go.aff.br4-partners.com/d2ir7y9d">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">🎰 <b>CADASTRE-SE PARA JOGAR</b></a>
 
-<a href="https://go.aff.br4-partners.com/1dxlibvb">Link do jogo!</a>
+<a href="https://go.aff.br4-partners.com/rqd4j287">Link do jogo!</a>
 """
     }
 ]
