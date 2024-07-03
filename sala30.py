@@ -8,13 +8,13 @@ bot = telebot.TeleBot(CHAVE_API)
 channel_id = '-1002191964278'
 
 possibilidades_minas = [
-    "Apostar na primeira dúzia [1-12]",
-    "Apostar na segunda dúzia [13-24]",
-    "Apostar na terceira dúzia [25-36]",
-    "Apostar na primeira coluna",
-    "Apostar na segunda coluna",
-    "Apostar na terceira coluna",
-    ]
+    "Apostar na 1° e 2° coluna",
+    "Apostar na 1° e 3° coluna",
+    "Apostar na 2° e 3° coluna",
+    "Apostar na 1° e 2° dúzia",
+    "Apostar na 1° e 3° dúzia",
+    "Apostar na 2° e 3° dúzia",
+]
 
 texto4 = """
 🎯 TROPA DO VIP! 🎯
