@@ -11,7 +11,7 @@ possibilidades_minas = [f"Apostar no número {i} (com oito vizinhos na pista)" f
 possibilidades_minas.append("Apostar no número 0 (com oito vizinhos na pista)")
 
 texto4 = """
-Pra quem ainda quer mais sinais, nossa sessão aqui começa às 16:00!🔥
+Pra quem ainda quer mais sinais, nossa sessão aqui começa às 20:00!🔥
 
 ⏰ Já coloca seu relógio pra despertar, vou passar 10 ENTRADAS em Números
 
