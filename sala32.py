@@ -5,13 +5,13 @@ import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
-channel_id = '-1002219798321'
+channel_id = '-1002191964278'
 
 possibilidades_minas = [f"Apostar no número {i} (com oito vizinhos na pista)" for i in range(1, 37)]
 possibilidades_minas.append("Apostar no número 0 (com oito vizinhos na pista)")
 
 texto4 = """
-Pra quem ainda quer mais sinais, nossa sessão aqui começa às 16:00!🔥
+Pra quem ainda quer mais sinais, nossa sessão aqui começa às 20:00!🔥
 
 ⏰ Já coloca seu relógio pra despertar, vou passar 10 ENTRADAS em Números
 
