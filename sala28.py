@@ -5,7 +5,7 @@ import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
-channel_id = '-1002224362351'
+channel_id = '-1002023766660'
 
 possibilidades_minas = [
     "Apostar na primeira dúzia [1-12]",
@@ -51,7 +51,7 @@ mensagem = """
 
 def send_signal():
     bot.send_message(chat_id=channel_id, text=texto4, parse_mode='HTML', disable_web_page_preview=True)
-    time.sleep(300) 
+    time.sleep(1200) 
     bot.send_message(chat_id=channel_id, text=texto5, parse_mode='HTML', disable_web_page_preview=True)
     time.sleep(30)
     possibilidade_mina_aleatoria = random.choice(possibilidades_minas)
@@ -130,7 +130,7 @@ def send_signal():
 def check_and_send_signal():
     current_time = datetime.datetime.now().strftime("%H:%M")
     signal_times = [
-        "09:30"
+        "09:10"
     ]
 
     if current_time in signal_times:
