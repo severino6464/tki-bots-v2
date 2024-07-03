@@ -5,7 +5,7 @@ import time
 
 CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
 bot = telebot.TeleBot(CHAVE_API)
-channel_id = '-1002224362351'
+channel_id = '-1002023766660'
 
 possibilidades_minas = [f"Apostar no número {i} (com oito vizinhos na pista)" for i in range(1, 37)]
 possibilidades_minas.append("Apostar no número 0 (com oito vizinhos na pista)")
