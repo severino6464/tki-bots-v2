@@ -47,7 +47,7 @@ mensagem = """
 Jogar com 2 a 3 minas
 
 📲: Plataforma correta: [Clique aqui](https://bcraft.g2afse.com/click?pid=1595&offer_id=16)
-👉🏻: Link do jogo: [Mines](https://bcraft.g2afse.com/click?pid=1595&offer_id=16)
+👉🏻: Link do jogo: [Mines](https://principalbet.com/slots/028142ca/in:028142ca__pr:spribe__id:mines)
 ⏱️ Válido até: {}
 
 """
