@@ -40,7 +40,7 @@ texto1 = """
 🎲 Fique atento ao jogo 🎲
 💣 Mines - Entrada em 2 minutos
 🔎 Estamos validando uma entrada
-<a href="https://principalbet.com/main?openedModals=%2Fsign-up">🖥 Link de cadastro</a>
+<a href="https://bcraft.g2afse.com/click?pid=1319&offer_id=61">🖥 Link de cadastro</a>
 """
 
 mensagem = """
@@ -53,8 +53,8 @@ Jogar com 2 a 3 minas
 
 ⏱️ Válido até: {}
 
-<a href="https://principalbet.com/main?openedModals=%2Fsign-up">📲: Plataforma correta</a>
-<a href="https://principalbet.com/main?openedModals=%2Fsign-up">👉🏻: Link do jogo</a>
+<a href="https://bcraft.g2afse.com/click?pid=1319&offer_id=61">📲: Plataforma correta</a>
+<a href="https://bcraft.g2afse.com/click?pid=1319&offer_id=61">👉🏻: Link do jogo</a>
 
 Quem lucrou acima de R$ 10 reage aqui embaixo 👇
 """
