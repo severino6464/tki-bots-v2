@@ -50,7 +50,7 @@ Jogar com 2 a 3 minas
 
 ⏱️ Válido até: {}
 
-<a href="https://bcraft.g2afse.com/click?pid=1697&offer_id=69">📲: Plataforma correta</a>
+<a href="https://baraodabet.postaffiliatepro.com/scripts/2cohg3udwwy?a_aid=66d246841946b&a_bid=6860705a">📲: Plataforma correta</a>
 """
 
 
