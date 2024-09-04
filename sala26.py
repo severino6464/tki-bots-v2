@@ -3,11 +3,11 @@ import time
 import datetime
 import random
 
-CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8" 
+CHAVE_API = "5597794728:AAGfwOg3RijfPrQ5S_Iw6NKAuYucNEdIsO8==============<<<<<" 
 
 bot = telebot.TeleBot(CHAVE_API)
 
-group_id = '-1002200526019'
+group_id = '-1002200526019=======================================<<<<<<<'
 
 sticker_file_id = 'CAACAgIAAxkBAAMmZSb_ngXS-jrJPaIDkQxNkCtYOQQAAtgLAAJYD5hKNPj69b5xWK8wBA'
 
